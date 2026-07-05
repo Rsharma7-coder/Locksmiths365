@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0e17">
+  <title>Contact | Locksmith365.ca</title>
+  <meta name="description" content="Contact Locksmith365 for 24/7 locksmith service in Kitchener, Waterloo & Cambridge. Call (226) 566-6693 or send a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div id="appbar"></div>
+  <div id="drawer-wrap"></div>
+  <section class="page-hero">
+    <div class="glow-bg"></div>
+    <div class="reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h1>Let's get you<br><span class="hl">back inside.</span></h1>
+      <p>For emergencies, call us directly — we answer 24/7. For quotes and bookings, drop us a message below.</p>
+      <a href="tel:2265666693" class="btn btn-amber">📞 Call (226) 566-6693</a>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:8px">
+    <div class="cinfo">
+      <div class="cinfo-row reveal"><div class="cinfo-icn">📞</div><div><b>Phone</b><p><a href="tel:2265666693">(226) 566-6693</a> · 24/7</p></div></div>
+      <div class="cinfo-row reveal"><div class="cinfo-icn">✉️</div><div><b>Email</b><p><a href="mailto:info@locksmith365.ca">info@locksmith365.ca</a></p></div></div>
+      <div class="cinfo-row reveal"><div class="cinfo-icn">📍</div><div><b>Service area</b><p>Kitchener · Waterloo · Cambridge</p></div></div>
+      <div class="cinfo-row reveal"><div class="cinfo-icn">🕐</div><div><b>Hours</b><p>Open 24/7 — holidays included</p></div></div>
+    </div>
+
+    <div class="fcard reveal">
+      <h3>Send a message</h3>
+      <div class="frow">
+        <div class="fg"><label>First name</label><input type="text" placeholder="John"></div>
+        <div class="fg"><label>Last name</label><input type="text" placeholder="Smith"></div>
+      </div>
+      <div class="fg"><label>Phone</label><input type="tel" placeholder="(226) 555-0123"></div>
+      <div class="fg"><label>Email</label><input type="email" placeholder="john@example.com"></div>
+      <div class="fg"><label>Service needed</label>
+        <select>
+          <option value="">Select a service…</option>
+          <option>Emergency — Home</option>
+          <option>Emergency — Car</option>
+          <option>Emergency — Business</option>
+          <option>Lock change / install</option>
+          <option>Rekeying</option>
+          <option>Car key replacement</option>
+          <option>Commercial</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg"><label>City</label>
+        <select><option>Kitchener</option><option>Waterloo</option><option>Cambridge</option><option>Nearby</option></select>
+      </div>
+      <div class="fg"><label>Message</label><textarea placeholder="Tell us what's going on…"></textarea></div>
+      <button class="btn btn-amber" onclick="sendForm(event)">Send message</button>
+      <div class="form-ok" id="ok">✅ Sent! We'll be in touch shortly.</div>
+      <p style="font-size:.78rem;color:var(--text-dim);text-align:center;margin-top:12px">Emergency? Call <a href="tel:2265666693" style="color:var(--amber)">(226) 566-6693</a> for the fastest response.</p>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <div class="call-dock" id="call-dock"></div>
+</div>
+<script src="app.js"></script>
+<script>
+  injectChrome('contact.html');
+  function sendForm(e){ e.preventDefault(); document.getElementById('ok').style.display='block'; }
+</script>
+</body>
+</html>

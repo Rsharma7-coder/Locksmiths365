@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.locksmiths365.ca/sitemap.xml
-
-# Locksmiths365 — 24/7 Emergency Locksmith Kitchener Waterloo Cambridge Ontario
+Sitemap: https://locksmiths365.ca/sitemap.xml
