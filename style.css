@@ -840,7 +840,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: border-color .2s, transform .15s;
 }
+.wait-row:active { transform: scale(.98); border-color: rgba(246,166,35,.4); }
 .wait-row .wr-city {
   flex: 1;
   font-family: var(--fd);
@@ -871,3 +874,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .map-route { animation: none; }
   .map-legend .pulse-demo { animation: none; }
 }
+
+/* ── NEIGHBOURHOOD CHIPS ──────────────────────── */
+.hood-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+.hood-chip {
+  font-family: var(--fb);
+  font-size: .83rem;
+  font-weight: 500;
+  color: var(--text-mut);
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  padding: 8px 15px;
+  border-radius: 100px;
+  transition: border-color .2s, color .2s;
+}
+.hood-chip:hover { border-color: rgba(246,166,35,.4); color: var(--amber); }

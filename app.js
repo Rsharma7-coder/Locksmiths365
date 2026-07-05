@@ -17,6 +17,9 @@ const NAV = {
     ['📍','Kitchener','locksmith-kitchener.html'],
     ['📍','Waterloo','locksmith-waterloo.html'],
     ['📍','Cambridge','locksmith-cambridge.html'],
+    ['📍','New Hamburg','locksmith-new-hamburg.html'],
+    ['📍','Guelph','locksmith-guelph.html'],
+    ['📍','Fergus','locksmith-fergus.html'],
   ],
   more: [
     ['ℹ️','About Us','about.html'],
@@ -115,9 +118,9 @@ function injectChrome(active) {
           <a href="locksmith-kitchener.html">Kitchener</a>
           <a href="locksmith-waterloo.html">Waterloo</a>
           <a href="locksmith-cambridge.html">Cambridge</a>
-          <a href="index.html#coverage">New Hamburg</a>
-          <a href="index.html#coverage">Guelph</a>
-          <a href="index.html#coverage">Fergus</a>
+          <a href="locksmith-new-hamburg.html">New Hamburg</a>
+          <a href="locksmith-guelph.html">Guelph</a>
+          <a href="locksmith-fergus.html">Fergus</a>
           <h5 style="margin-top:22px">Company</h5>
           <a href="about.html">About</a>
           <a href="faq.html">FAQ</a>
