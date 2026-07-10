@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#0a0e17">
   <title>Contact | Locksmith365.ca</title>
-  <meta name="description" content="Contact Locksmith365 for 24/7 locksmith service in Kitchener, Waterloo & Cambridge. Call (226) 566-6693 or send a message.">
+  <meta name="description" content="Contact Locksmith365 for 24/7 locksmith service in Kitchener, Waterloo & Cambridge. Call (226) 336-9338 or send a message.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"></noscript>
+  <link rel="canonical" href="https://locksmiths365.ca/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Locksmith365.ca">
+  <meta property="og:description" content="Contact Locksmith365 for 24/7 locksmith service in Kitchener, Waterloo & Cambridge. Call (226) 336-9338 or send a message.">
+  <meta property="og:url" content="https://locksmiths365.ca/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=70">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
   <meta name="geo.region" content="CA-ON">
   <meta name="geo.placename" content="Kitchener, Waterloo, Cambridge, New Hamburg, Guelph, Fergus">
@@ -20,7 +28,7 @@
   "name": "Locksmiths365",
   "image": "https://locksmiths365.ca/favicon.svg",
   "url": "https://locksmiths365.ca/",
-  "telephone": "+12265666693",
+  "telephone": "+12263369338",
   "priceRange": "$$",
   "description": "Locally owned 24/7 emergency locksmith serving Kitchener, Waterloo, Cambridge, New Hamburg, Guelph and Fergus, Ontario.",
   "areaServed": [
@@ -53,7 +61,7 @@
 </script>
 </head>
 <body>
-<div class="app">
+<div class="app" data-page="contact.html">
   <div id="appbar"></div>
   <div id="drawer-wrap"></div>
   <section class="page-hero">
@@ -62,13 +70,13 @@
       <div class="eyebrow">Get in touch</div>
       <h1>Let's get you<br><span class="hl">back inside.</span></h1>
       <p>For emergencies, call us directly — we answer 24/7. For quotes and bookings, drop us a message below.</p>
-      <a href="tel:2265666693" class="btn btn-amber">📞 Call (226) 566-6693</a>
+      <a href="tel:2263369338" class="btn btn-amber">📞 Call (226) 336-9338</a>
     </div>
   </section>
 
   <section class="section" style="padding-top:8px">
     <div class="cinfo">
-      <div class="cinfo-row reveal"><div class="cinfo-icn">📞</div><div><b>Phone</b><p><a href="tel:2265666693">(226) 566-6693</a> · 24/7</p></div></div>
+      <div class="cinfo-row reveal"><div class="cinfo-icn">📞</div><div><b>Phone</b><p><a href="tel:2263369338">(226) 336-9338</a> · 24/7</p></div></div>
       <div class="cinfo-row reveal"><div class="cinfo-icn">✉️</div><div><b>Email</b><p><a href="mailto:info@locksmith365.ca">info@locksmith365.ca</a></p></div></div>
       <div class="cinfo-row reveal"><div class="cinfo-icn">📍</div><div><b>Service area</b><p>Kitchener · Waterloo · Cambridge</p></div></div>
       <div class="cinfo-row reveal"><div class="cinfo-icn">🕐</div><div><b>Hours</b><p>Open 24/7 — holidays included</p></div></div>
@@ -101,15 +109,14 @@
       <div class="fg"><label>Message</label><textarea placeholder="Tell us what's going on…"></textarea></div>
       <button class="btn btn-amber" onclick="sendForm(event)">Send message</button>
       <div class="form-ok" id="ok">✅ Sent! We'll be in touch shortly.</div>
-      <p style="font-size:.78rem;color:var(--text-dim);text-align:center;margin-top:12px">Emergency? Call <a href="tel:2265666693" style="color:var(--amber)">(226) 566-6693</a> for the fastest response.</p>
+      <p style="font-size:.78rem;color:var(--text-dim);text-align:center;margin-top:12px">Emergency? Call <a href="tel:2263369338" style="color:var(--amber)">(226) 336-9338</a> for the fastest response.</p>
     </div>
   </section>
   <div id="footer"></div>
   <div class="call-dock" id="call-dock"></div>
 </div>
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 <script>
-  injectChrome('contact.html');
   function sendForm(e){ e.preventDefault(); document.getElementById('ok').style.display='block'; }
 </script>
 </body>

@@ -1,7 +1,7 @@
 /* app.js — shared chrome + interactions */
 
-const PHONE = '(226) 566-6693';
-const TEL = 'tel:2265666693';
+const PHONE = '(226) 336-9338';
+const TEL = 'tel:2263369338';
 
 const NAV = {
   services: [
@@ -187,3 +187,14 @@ function setupFaq() {
     });
   });
 }
+
+// Auto-init: reads the active page from the .app container's data-page
+// attribute, so every page only needs a single `<script src="app.js" defer>`
+// tag with no extra inline call. Safe with `defer` — DOMContentLoaded always
+// fires after deferred scripts finish executing, and the .app element with
+// its data-page attribute is already in the parsed HTML by then.
+document.addEventListener('DOMContentLoaded', () => {
+  const appEl = document.querySelector('.app');
+  const active = appEl ? appEl.getAttribute('data-page') || '' : '';
+  injectChrome(active);
+});
